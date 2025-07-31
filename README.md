@@ -44,10 +44,10 @@ You can run tests by specifying:
 🧾 Example command:
 
 ```bash
-cross-env TEST_ENV=dev TEST_BROWSER=chromium npm test --tags @checkout
+npm test --tags @checkout
 ```
 
-You can use tags like @smoke, @checkout, etc., depending on your test cases.
+You can use tags like @smoke, @checkout, etc., depending on your test cases. Update test parameters in package.json.
 
 📊 Allure Reporting
 Generate the report:
