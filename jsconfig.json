@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "pages/*","step_definitions/*","utils/*","features/*","core/*","config/*"] 
+    }
+  },
+  "include": ["**/*.js", "**/*.ts"] 
+}

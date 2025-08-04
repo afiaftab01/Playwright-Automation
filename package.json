@@ -1,0 +1,23 @@
+{
+  "name": "automation-framework",
+  "version": "1.0.0",
+  "description": "Playwright, Cucumber.js, and Allure automation framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env TEST_ENV=dev TEST_BROWSER=chromium npx cucumber-js --tags",
+    "test:checkout": "npm test --tags @checkout",
+    "report:generate": "allure generate ./allure-results --clean -o ./reports",
+    "report:open": "allure open ./reports"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "allure-commandline": "^2.20.1",
+    "allure-cucumberjs": "^3.3.2",
+    "chai": "^4.3.7",
+    "cross-env": "^7.0.3",
+    "playwright": "^1.44.0"
+  },
+  "dependencies": {
+    "winston": "^3.17.0"
+  }
+}
